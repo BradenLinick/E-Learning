@@ -1,14 +1,29 @@
-
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+ 
 // Variables
 @import 'variables';
-
+ 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import '../../node_modules/bootstrap/scss/bootstrap';
 
-.navbar-laravel {
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url('/img/desk.jpg');
+  background-size: cover;
 }
+
+#nav {
+  background-color: black;
+}
+
+// .links > a {
+//   color: #636b6f;
+//   padding: 0 25px;
+//   font-size: 12px;
+//   font-weight: 600;
+//   letter-spacing: .1rem;
+//   text-decoration: none;
+//   text-transform: uppercase;
+// }
