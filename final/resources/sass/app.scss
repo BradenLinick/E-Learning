@@ -10,8 +10,26 @@
 html, body {
   box-sizing: border-box;
   margin: 0;
-  background-image: url('/img/desk.jpg');
+  background: linear-gradient(
+    rgba(0, 0, 0, .7),
+    rgba(22, 36, 48, .6),
+    rgba(90, 72, 59, .2),
+    rgba(0, 0, 0, .7)),
+    url('/img/desk.jpg');
   background-size: cover;
+  height: 100vh;
+}
+
+#footers {
+  border: 1px solid black;
+  background-color: black;
+  position: absolute;
+  right: 0;bottom:0;left:0;
+}
+
+h3 {
+  font-size: 38px;
+  font-weight: lighter;
 }
 
 #nav {

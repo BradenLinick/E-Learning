@@ -35,5 +35,40 @@
           </span>
         </div>
       </nav>
+
+
+      <div class="mw-50 container mt-5 d-flex">
+        <div>
+          <h2 class="text-white display-4">CodePen is a social development environment for front-end designers and developers.</h2>
+          <h3 class="text-white">It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</h3>
+        </div>
+
+        {{-- register --}}
+        
+        <div class="p-5 jumbotron jumbotron d-flex flex-column justify-content-center align-items-center">
+              <h4>Registration</h4>
+              <form action="post">
+                <label class="mt-2" for="first">First name: </label>
+                <input type="text" name="first">
+                <br>
+                  <label class="mt-2" for="last">Last name: </label>
+                  <input type="text" name="last">
+                <br>
+                  <label class="mt-2" for="email">Email: </label>
+                  <input type="text" name="email">
+                <br>
+                  <label class="mt-2" for="confirm">Confirm Email: </label>
+                  <input type="text" name="confirm">
+                <br>
+                  <input class="border rounded mt-3" type="submit" value="Submit">
+              </form>
+        </div>
+      </div>
+
+      <footer class="footer m-0" id="footers">
+        <div class="container d-flex align-items-center">
+          <p class="p-2 text-white">Italian-American Productions, LLC.</p>
+        </div>
+      </footer>
     </body>
 </html>
