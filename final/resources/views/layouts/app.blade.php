@@ -19,6 +19,7 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
@@ -31,13 +32,13 @@
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">My Classes</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="{{ action('AboutController@index') }}">About</a>
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto">
@@ -78,10 +79,10 @@
             @yield('content')
         </main>
     </div>
-
-    <footer class="footer m-0" id="footers">
+    <div style="height: 3rem;" class="m-2"></div>
+    <footer style="position: fixed; right: 0; left: 0; bottom: 0; width: 100%;" class="footer pt-2" id="footers">
         <div class="container d-flex align-items-center">
-          <p class="p-2 text-white">Italian-American Productions, LLC.</p>
+          <p class="p-2">Italian-American Productions, LLC.</p>
         </div>
       </footer>
 </body>
