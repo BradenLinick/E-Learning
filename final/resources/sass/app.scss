@@ -10,31 +10,61 @@
 html, body {
   box-sizing: border-box;
   margin: 0;
+  background: linear-gradient(black, black, black, rgb(42, 126, 186));
+}
+
+#bg {
+  padding: 3rem;
   background: linear-gradient(
     rgba(0, 0, 0, .7),
     rgba(22, 36, 48, .6),
-    rgba(90, 72, 59, .2),
+    rgba(42, 126, 186, .4),
     rgba(0, 0, 0, .7)),
-    url('/img/desk.jpg');
+    url('/img/desk.jpg') no-repeat;
   background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+#chooseUs {
   height: 100vh;
+  width: 100vw;
+}
+
+#classLogo {
+  width:5rem; height: 5rem;
+}
+
+#box {
+  background-color: rgba(0,0,0,0.7); 
+  width: 20rem; height: 20rem; 
+  border: 1px solid white;
+}
+
+#box:hover {
+  border: 1px solid #2A7EBA;
 }
 
 #footers {
-  border: 1px solid black;
+  margin-top: auto;
+  height: 3rem;
   background-color: black;
-  position: absolute;
-  right: 0;bottom:0;left:0;
-  color: yellow;
 }
 
 h3 {
   font-size: 38px;
   font-weight: lighter;
+
 }
 
 #nav {
   background-color: black;
+  margin : 0 !important;
 }
 
 // .links > a {

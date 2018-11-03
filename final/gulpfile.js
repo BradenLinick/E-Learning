@@ -81,7 +81,7 @@ gulp.task( 'build', ['styles', 'js'], function() {
  
 gulp.task( 'develop', ['build'], function() {
     gulp.watch( styleWatch, [ 'styles' ] );
-    gulp.watch( jsWatch, [ 'js', reload ] );
+    gulp.watch( jsWatch, [ 'js', function(){ (reload)({stream: true}) } ] );
     gulp.src( jsDist + 'admin.min.js' )
         .pipe( notify({ message: 'Gulp is Watching, Happy Coding!' }) );
 });

@@ -19,7 +19,7 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 </head>
 <body>
     <div id="app">
@@ -31,13 +31,13 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item {{ $active == '/' ? ' active' : '' }}">
+                  <a class="nav-link" href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item{{ $active == 'classes' ? ' active' : '' }}">
                   <a class="nav-link" href="#">My Classes</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item{{ $active == 'about' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ action('AboutController@index') }}">About</a>
                 </li>
               </ul>
@@ -75,15 +75,12 @@
             </div>
           </nav>
 
-        <main class="py-4">
+        <main class="m-0">
             @yield('content')
         </main>
     </div>
-    <div style="height: 3rem;" class="m-2"></div>
-    <footer style="position: fixed; right: 0; left: 0; bottom: 0; width: 100%;" class="footer pt-2" id="footers">
-        <div class="container d-flex align-items-center">
-          <p class="p-2">Italian-American Productions, LLC.</p>
-        </div>
+      <footer class="d-flex align-items-center justify-content-center" id="footers">
+          <span class="text-white">Italian-American Productions, LLC.</span>
       </footer>
 </body>
 </html>
