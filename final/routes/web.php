@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'AboutController@index');
 
 Route::get('/myclasses', 'myclasses@index');
+
+Route::get('/lessons', 'LessonsController@index');

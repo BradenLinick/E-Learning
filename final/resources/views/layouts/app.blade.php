@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'SJCN') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -83,5 +83,7 @@
       <footer class="d-flex align-items-center justify-content-center" id="footers">
           <span class="text-white">Italian-American Productions, LLC.</span>
       </footer>
+      <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script>
+      <script src="{{ asset('js/lessons.js') }}" defer></script>
 </body>
 </html>

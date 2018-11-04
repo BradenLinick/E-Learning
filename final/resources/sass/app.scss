@@ -7,6 +7,10 @@
 // Bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
+$primary-color: #2A7EBA;
+$gray: #D1D2D2;
+$secondary-color: #162430;
+
 html, body {
   box-sizing: border-box;
   margin: 0;
@@ -28,6 +32,53 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+#lesson-container {
+  width: 100vw;
+  height: 86vh;
+}
+
+#box-left {
+  width: 100%;
+  overflow: scroll;
+}
+
+#box-mid {
+  width: 100%;
+  overflow: scroll;
+}
+
+#box-right {
+  width: 100%;
+  overflow: scroll;
+}
+
+.gutter {
+  cursor: ew-resize;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#jumbo-mini {
+  width: 100%;
+  background-color: $primary-color;
+}
+
+#jumbo-mini-mid {
+  width: 100%;
+  background-color: $gray;
+}
+
+#jumbo-mini-right {
+  width: 100%;
+  background-color: $secondary-color;
+}
+
+#handle {
+  width: 10px;
+  background: #ddd;
+  cursor: ew-resize;
 }
 
 #quote {
