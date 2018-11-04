@@ -31,6 +31,22 @@
     </div>
 
       <div id="chooseUs" class="container">
-
+        <div id="space"></div>
+        <h2 class="text-white text-center mx-2 display-4">Why Choose Us? </h2>
+        <div id="space-small"></div>
+        <div class="m-4 d-flex flex-column flex-md-row justify-content-between">
+          <div class="d-flex flex-column align-items-center">
+            <i id="icon" class="fa-7x fas fa-graduation-cap"></i>
+            <p class="pt-2 px-4 text-white text-center">Learn from a multitude of comprehensive lessons earning accredited certificates to enhance your CV and LinkedIn</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+              <i id="icon" class="fa-7x fas fa-globe-americas"></i>
+              <p class="pt-2 px-4 text-white text-center">Get armed with the knowledge you need to make it in today's global development market</p>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <i id="icon" class="fa-7x fab fa-studiovinari"></i>
+            <p class="pt-2 px-4 text-white text-center">Emerge from our program as a super jedi code ninja master, get out and achieve success wherever your ambitions take you</p>
+          </div>
+        </div>
       </div>
 @endsection

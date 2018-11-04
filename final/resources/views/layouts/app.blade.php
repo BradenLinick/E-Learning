@@ -15,6 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <!-- Styles -->
 
@@ -34,8 +35,8 @@
                 <li class="nav-item {{ $active == '/' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="nav-item{{ $active == 'classes' ? ' active' : '' }}">
-                  <a class="nav-link" href="#">My Classes</a>
+                <li class="nav-item{{ $active == 'myclasses' ? ' active' : '' }}">
+                  <a class="nav-link" href="{{ action('myclasses@index') }}">My Classes</a>
                 </li>
                 <li class="nav-item{{ $active == 'about' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ action('AboutController@index') }}">About</a>
@@ -44,10 +45,10 @@
               <ul class="navbar-nav ml-auto">
                   <!-- Authentication Links -->
                   @guest
-                      <li class="nav-item">
+                      <li class="nav-item {{ $active == '/login' ? ' active' : '' }}">
                           <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item {{ $active == '/register' ? ' active' : '' }}">
                           @if (Route::has('register'))
                               <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                           @endif
@@ -61,7 +62,7 @@
                           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                               <a class="dropdown-item" href="{{ route('logout') }}"
                                  onclick="event.preventDefault();
-                                               document.getElementById('logout-form').submit();">
+                                    document.getElementById('logout-form').submit();">
                                   {{ __('Logout') }}
                               </a>
 

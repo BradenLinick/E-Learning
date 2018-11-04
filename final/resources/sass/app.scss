@@ -28,7 +28,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
 
+#quote {
+  color: #2A7EBA;
 }
 
 #chooseUs {
@@ -56,10 +59,21 @@ body {
   background-color: black;
 }
 
-h3 {
+#about h3 {
   font-size: 38px;
   font-weight: lighter;
+}
 
+#space {
+  height: 5rem;
+}
+
+#icon {
+  color: white;
+}
+
+#space-small {
+  height: 1.8rem;
 }
 
 #nav {
