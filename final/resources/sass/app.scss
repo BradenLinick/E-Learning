@@ -28,6 +28,18 @@ html, body {
   background-size: cover;
 }
 
+/* Welcome Page */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -113,6 +125,24 @@ body {
 #about h3 {
   font-size: 38px;
   font-weight: lighter;
+}
+
+/* Intro Pages */
+
+#subhead-html {
+  letter-spacing: .3rem;
+}
+
+#lessons li {
+  font-size: 16px;
+}
+
+#intro-left {
+  width: 50%;
+}
+
+#intro-text {
+  padding: 3rem 7rem;
 }
 
 #space {
