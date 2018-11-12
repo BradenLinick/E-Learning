@@ -83,7 +83,7 @@
       <footer class="d-flex align-items-center justify-content-center" id="footers">
           <span class="text-white">Italian-American Productions, LLC.</span>
       </footer>
-      <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script>
-      <script src="{{ asset('js/lessons.js') }}" defer></script>
+      {{-- <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script> --}}
+      <script src="{{ asset('js/bundle.js') }}" defer></script>
 </body>
 </html>
