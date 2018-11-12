@@ -10,6 +10,25 @@
 $primary-color: #2A7EBA;
 $gray: #D1D2D2;
 $secondary-color: #162430;
+$red: #C72F2C;
+$yellow: #C7C623;
+$purple: #7925D1;
+$green: #25D15B;
+#red-text {
+  color: $red;
+}
+#purple-text {
+  color: $purple;
+}
+#pri-text {
+  color: $primary-color;
+}
+#green-text {
+  color: #25D15B;
+}
+#yellow-text {
+  color: $yellow;
+}
 
 html, body {
   box-sizing: border-box;
@@ -26,6 +45,9 @@ html, body {
     rgba(0, 0, 0, .7)),
     url('/img/desk.jpg') no-repeat;
   background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 /* Welcome Page */
@@ -64,6 +86,10 @@ body {
 #box-right {
   width: 100%;
   overflow: scroll;
+}
+
+#box-width {
+  width: 100%;
 }
 
 .gutter {
@@ -149,10 +175,6 @@ body {
   height: 5rem;
 }
 
-#icon {
-  color: white;
-}
-
 #space-small {
   height: 1.8rem;
 }
@@ -160,6 +182,12 @@ body {
 #nav {
   background-color: black;
   margin : 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #bg {
+      height: auto;
+  }
 }
 
 // .links > a {

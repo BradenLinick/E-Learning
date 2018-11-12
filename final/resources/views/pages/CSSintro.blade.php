@@ -3,9 +3,9 @@
 @section('content')
 
 <div class="container">
-  <h2 class="text-white display-4">Welcome to CSS</h2>
+  <h2 class="text-white display-4">Welcome to <span id="pri-text">#</span> CSS</h2>
   <div id="">
-    <h3 id="subhead-html" class="text-white">Styling, positioning and animations</h3>
+    <h3 id="subhead-html" class="text-white"><span id="yellow-text">Styling</span>, positioning and animations</h3>
     <div class="d-flex flex-column justify-content-between align-items-center mt-4">
       <div id="intro-text">
         <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, distinctio corporis porro qui deleniti dignissimos sunt autem sed sequi explicabo delectus voluptatibus inventore. Ipsam tenetur officia, maxime nobis fugiat corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, distinctio corporis porro qui deleniti dignissimos sunt autem sed sequi explicabo delectus voluptatibus inventore. Ipsam tenetur officia, maxime nobis fugiat corrupti.

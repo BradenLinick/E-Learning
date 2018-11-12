@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="container">
-  <h2 class="text-white display-4">Welcome to JavaScript</h2>
+  <h2 class="text-white display-4">Welcome to <span id="pri-text">java</span>Script<span id="yellow-text">();</span></h2>
   <div id="">
     <h3 id="subhead-html" class="text-white">Dynamics and interactivity</h3>
     <div class="d-flex flex-column justify-content-between align-items-center mt-4">

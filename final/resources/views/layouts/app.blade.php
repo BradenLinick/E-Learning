@@ -23,6 +23,7 @@
     
 </head>
 <body>
+  
     <div id="app">
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
@@ -76,7 +77,7 @@
             </div>
           </nav>
 
-        <main class="m-0">
+        <main>
             @yield('content')
         </main>
     </div>
@@ -85,5 +86,6 @@
       </footer>
       {{-- <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script> --}}
       <script src="{{ asset('js/bundle.js') }}" defer></script>
+
 </body>
 </html>
