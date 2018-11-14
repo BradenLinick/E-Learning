@@ -34,19 +34,19 @@ class DatabaseSeeder extends Seeder
 
         for ($i = 0; $i < 5; $i++) {
           Lessons::create([
-            'lesson_name' => 'HTML' . $i,
+            'lesson_name' => 'HTML',
             'description' => 'Make an <h1>',
             'course_id' => $html->id
           ]);
 
           Lessons::create([
-            'lesson_name' => 'CSS' . $i,
+            'lesson_name' => 'CSS',
             'description' => 'Make an <h1>',
             'course_id' => $css->id
           ]);
 
           Lessons::create([
-            'lesson_name' => 'JavaScript' . $i,
+            'lesson_name' => 'JavaScript',
             'description' => 'Make an <h1>',
             'course_id' => $js->id
           ]);

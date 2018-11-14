@@ -7,11 +7,13 @@
     <div id="jumbo-mini">
       <h3 class="text-white text-left m-2">Lesson</h3>
     </div>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
+    {{-- @foreach ($html[0] as $htmlLessons)
+    <p>{{ $htmlLessons->description }}</p>
+    @endforeach --}} 
+    {{-- ** number for array needs to be a counter variable. Logic must be written in a document other than this one ** --}}
+    <p>{{ $html[0]->description }}</p>
+    
+    
   </div>
   <div id="box-mid" class="border border-default d-flex flex-column">
     <div id="jumbo-mini-mid">

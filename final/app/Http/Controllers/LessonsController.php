@@ -3,10 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Lessons;
 
 class LessonsController extends Controller
 {
     public function index() {
-      return view('pages.lessons');
+      $lessons = Lessons::where('lesson_name', '=', 'HTML')->get();
+      
+      return view('pages.lessons', [
+          'html' => $lessons
+        ]);
+      
     }
 }
