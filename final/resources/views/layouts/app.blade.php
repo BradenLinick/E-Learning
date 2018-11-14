@@ -20,10 +20,12 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
+
+    
     
 </head>
 <body>
-  
     <div id="app">
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
@@ -77,7 +79,7 @@
             </div>
           </nav>
 
-        <main>
+        <main class="m-0">
             @yield('content')
         </main>
     </div>
@@ -85,7 +87,9 @@
           <span class="text-white">Italian-American Productions, LLC.</span>
       </footer>
       {{-- <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script> --}}
-      <script src="{{ asset('js/bundle.js') }}" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js"></script>
 
+      <script src="{{ asset('js/bundle.js') }}" defer></script>
+    
 </body>
 </html>

@@ -5,3 +5,5 @@ Split(['#box-left', '#box-mid', '#box-right'], {
   minSize: 200,
   gutterSize: 5
 });
+
+require("./editor.js");
