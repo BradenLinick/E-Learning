@@ -14,14 +14,42 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        Courses::create([
+        $html = Courses::create([
           'course_name' => 'HTML',
-          'description' => 'HTML course'
+          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
+          'img' => '/img/html.svg'
         ]);
 
-        Lessons::create([
-          'lesson_name' => 'HTML1',
-          'description' => 'Make an <h1>'
+        $css = Courses::create([
+          'course_name' => 'CSS',
+          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
+          'img' => '/img/css3.svg'
         ]);
+
+        $js = Courses::create([
+          'course_name' => 'JavaScript',
+          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
+          'img' => '/img/js.png'
+        ]);
+
+        for ($i = 0; $i < 5; $i++) {
+          Lessons::create([
+            'lesson_name' => 'HTML' . $i,
+            'description' => 'Make an <h1>',
+            'course_id' => $html->id
+          ]);
+
+          Lessons::create([
+            'lesson_name' => 'CSS' . $i,
+            'description' => 'Make an <h1>',
+            'course_id' => $css->id
+          ]);
+
+          Lessons::create([
+            'lesson_name' => 'JavaScript' . $i,
+            'description' => 'Make an <h1>',
+            'course_id' => $js->id
+          ]);
+        }
     }
 }
