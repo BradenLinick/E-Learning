@@ -51,8 +51,13 @@ if (document.getElementById('lesson-container')) {
   });
 
   next.addEventListener('click', () => {
+    //Grab solution, send it to server (use fetch?), add conditional wrapping around everything below within function
+    
     if(!hasMoreLessons){
       alert('no more lessons');
+
+
+      //window location redirects
       window.location.replace("http://www.final.test:8080");
       return;
     }
