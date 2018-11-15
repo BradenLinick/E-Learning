@@ -1,5 +1,5 @@
 import Split from 'split.js';
-
+import {url} from './env.js';
 
 if (document.getElementById('lesson-container')) {
   Split(['#box-left', '#box-mid', '#box-right'], {
@@ -22,7 +22,7 @@ if (document.getElementById('lesson-container')) {
   }
 
   function fetchLessons(){
-    fetch('http://www.localserver.test/api/lesson/' + lessonNumber)
+    fetch(url + '/api/lesson/' + lessonNumber)
     //replace URL with "http://www.final.test:8080"
     .then(function(response){
       return response.json();
@@ -59,7 +59,7 @@ if (document.getElementById('lesson-container')) {
 
 
       //window location redirects
-      window.location.replace("http://www.localserver.test");
+      window.location.replace(url);
       // braden's code: window.location.replace("http://www.final.test:8080");
 
       return;
