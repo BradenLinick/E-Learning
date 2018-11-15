@@ -16,7 +16,7 @@ function update() {
 }
 
 var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>";
-var lesson2Solution
+var lesson2Solution = 
 
 function trimSpaces(str) {
     return str.replace(/\s+/g, '');
@@ -83,7 +83,7 @@ function validateLesson1(){
 //lesson1 write a h1 headline with hello world
 
 
-var staticWordCompleter = {
+/*var staticWordCompleter = {
     getCompletions: function(editor, session, pos, prefix, callback) {
         var wordList = ["foo", "bar", "baz"];
         callback(null, wordList.map(function(word) {
@@ -95,10 +95,10 @@ var staticWordCompleter = {
         }));
 
     }
-}
+} */
 
 // or 
-editor.completers = [staticWordCompleter] 
+//editor.completers = [staticWordCompleter] 
 
 /* editor.completers.push({
     getCompletions: function(editor, session, pos, prefix, callback) {

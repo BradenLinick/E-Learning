@@ -5,25 +5,29 @@
       <div class="container d-flex flex-column align-content-center">
         <h2 class="text-white display-4">Insert generic mission statement here</h2>
       
-
+        
         <div class="my-3 container d-flex flex-column flex-md-row justify-content-between">
+          @foreach ($courses as $course)
           <div id="box" class="d-flex flex-column justify-content-center align-items-center">
-            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@htmlIntro') }}">HTML5</a></h3><img id="classLogo" src="/img/html.svg" alt=""></div>
+            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@htmlIntro') }}">{{ $course->course_name }}</a></h3><img id="classLogo" src="{{ $course->img }}" alt=""></div>
             <div class="p-3">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ut molestias voluptatum eos accusantium nam consequatur cupiditate vero, sequi eius enim porro eum aliquam, velit iste ipsa unde veritatis! Impedit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p class="text-white">{{ $course->description }}</p>
             </div>
           </div>
-          <div id="box" class="d-flex flex-column justify-content-center align-items-center">
+          @endforeach
+
+          {{-- <div id="box" class="d-flex flex-column justify-content-center align-items-center">
             <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@cssIntro') }}">CSS3</a></h3><img id="classLogo" src="/img/css3.svg" alt=""></div>
             <div class="p-3">
               <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ut molestias voluptatum eos accusantium nam consequatur cupiditate vero, sequi eius enim porro eum aliquam, velit iste ipsa unde veritatis! Impedit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
+
           <div id="box" class="d-flex flex-column justify-content-center align-items-center">
             <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@jsIntro') }}">JavaScript</a></h3><img id="classLogo" src="/img/js.png" alt=""></div>
             <div class="p-3">
               <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ut molestias voluptatum eos accusantium nam consequatur cupiditate vero, sequi eius enim porro eum aliquam, velit iste ipsa unde veritatis! Impedit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
+          </div> --}}
 
         </div>
       </div>
