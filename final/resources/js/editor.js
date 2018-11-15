@@ -3,6 +3,7 @@
 
 //var editor = ace.edit('propertiesText');
 //editor.getSession().setMode('ace/mode/properties');
+import swal from 'sweetalert';
 var langTools = ace.require('ace/ext/language_tools');
 
 
@@ -16,7 +17,7 @@ function update() {
 }
 
 var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>";
-var lesson2Solution = 
+
 
 function trimSpaces(str) {
     return str.replace(/\s+/g, '');
@@ -70,11 +71,11 @@ function setupEditor() {
 
 
 function validateLesson1(){
-    lesson1 = editor.getValue();    
+    let lesson1 = editor.getValue();    
     console.log(lesson1);
     console.log(lesson1Solution);
     if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
-        alert("YOU SOLVED THE EXERCISE!");
+        swal("YOU SOLVED THE EXERCISE!");
     }
 }
 
