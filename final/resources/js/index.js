@@ -1,14 +1,5 @@
 import Split from 'split.js';
 
-<<<<<<< HEAD
-Split(['#box-left', '#box-mid', '#box-right'], {
-  sizes: [33.3, 33.4, 33.3],
-  minSize: 200,
-  gutterSize: 5
-});
-
-require("./editor.js");
-=======
 
 if (document.getElementById('lesson-container')) {
   Split(['#box-left', '#box-mid', '#box-right'], {
@@ -31,7 +22,8 @@ if (document.getElementById('lesson-container')) {
   }
 
   function fetchLessons(){
-    fetch('http://www.final.test:8080/api/lesson/' + lessonNumber)
+    fetch('http://www.localserver.test/api/lesson/' + lessonNumber)
+    //replace URL with "http://www.final.test:8080"
     .then(function(response){
       return response.json();
     })
@@ -67,7 +59,9 @@ if (document.getElementById('lesson-container')) {
 
 
       //window location redirects
-      window.location.replace("http://www.final.test:8080");
+      window.location.replace("http://www.localserver.test");
+      // braden's code: window.location.replace("http://www.final.test:8080");
+
       return;
     }
 
@@ -82,4 +76,3 @@ if (document.getElementById('lesson-container')) {
 }
 
 console.log("Hello");
->>>>>>> c229123ca17ed047d6a957771145c2e8794286c8
