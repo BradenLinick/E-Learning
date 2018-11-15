@@ -24,3 +24,4 @@ Route::get('/lessons', 'LessonsController@index');
 Route::get('/htmlintro', 'IntroController@htmlIntro');
 Route::get('/cssintro', 'IntroController@cssIntro');
 Route::get('/jsintro', 'IntroController@jsIntro');
+Route::get('/api/lesson/{number}', 'LessonsController@api');

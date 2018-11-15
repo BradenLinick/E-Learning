@@ -1,9 +1,11 @@
+import 'swal' from 'sweetalert';
 //require('ace/ext/language_tools');
 //require('ace/multi_select');
 
 //var editor = ace.edit('propertiesText');
 //editor.getSession().setMode('ace/mode/properties');
 var langTools = ace.require('ace/ext/language_tools');
+
 
 
 function update() {

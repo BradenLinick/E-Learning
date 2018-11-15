@@ -68,11 +68,23 @@ body {
   min-height: 100vh;
 }
 
+
+
+
+/* Lessons */
+
+.hidden{
+  display: none;
+}
+
 #lesson-container {
   width: 100vw;
   height: 86vh;
 }
 
+#lesson-text {
+  font-size: 16px;
+}
 #box-left {
   width: 100%;
   overflow: scroll;
@@ -112,6 +124,8 @@ body {
   width: 100%;
   background-color: white;
 }
+
+/* */
 
 #handle {
   width: 10px;
