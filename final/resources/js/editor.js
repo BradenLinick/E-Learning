@@ -76,7 +76,7 @@ function validateLesson1(){
     console.log(lesson1);
     console.log(lesson1Solution);
     if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
-        alert("YOU SOLVED THE EXERCISE!");
+        alert("pppYOU SOLVED THE EXERCISE!");
     }
 }
 
