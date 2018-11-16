@@ -8,10 +8,10 @@
       <h3 class="text-white text-left m-2">Lesson</h3>
     </div>
     <div class="timeContainer">
-      <h1><time>00:00:00</time></h1>
-      <button id="start">start</button>
-      <button id="stop">stop</button>
-      <button id="clear">clear</button>
+      <h1><time class="time">00:00:00</time></h1>
+      <button id="timeStart" class="timeButton">start</button>
+      <button id="timeStop" class="timeButton">stop</button>
+      <button id="timeRefresh" class="timeButton">refresh</button>
     </div>
     <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
     <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>

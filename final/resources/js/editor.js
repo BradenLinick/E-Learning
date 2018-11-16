@@ -81,12 +81,9 @@ function validateLesson1(){
         swal({
             position: 'top-end',
             icon: 'success',
-            title: 'You got it',
-            button: 'next',
-            
-          })    
-
-
+            title: 'You solved the exercise',
+            button: 'next'            
+          });
     }
 }
 

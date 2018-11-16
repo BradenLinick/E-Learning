@@ -21,6 +21,8 @@
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
+    <link href="{{asset('css/timer.css')}}" rel="stylesheet">
+
 
     
     

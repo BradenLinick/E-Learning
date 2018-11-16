@@ -1,0 +1,15 @@
+.time {
+    color: red;
+    font-weight: 900;
+}
+
+.timeButton {
+    border: none;
+    background-color: #008CBA;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    display: inline-block;
+    padding: 11px 32px;
+    color: white;
+}
