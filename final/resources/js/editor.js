@@ -80,9 +80,9 @@ function validateLesson1(){
     if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
         swal({
             position: 'top-end',
-            type: 'success',
+            icon: 'success',
             title: 'You got it',
-            showConfirmButton: false,
+            button: 'next',
             
           })    
 

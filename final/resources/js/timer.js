@@ -23,7 +23,9 @@ h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (min
 
 }
 function timer() {
-t = setInterval(add, 1000);
+clearInterval(window.t);    
+console.log('interval cleared');
+window.t = setInterval(add, 1000);
 }
 timer();
 
@@ -33,7 +35,7 @@ start.onclick = timer;
 
 /* Stop button */
 stop.onclick = function() {
-clearInterval(t);
+clearInterval(window.t);
 }
 
 /* Clear button */
