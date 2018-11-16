@@ -5,5 +5,7 @@ Split(['#box-left', '#box-mid', '#box-right'], {
   minSize: 200,
   gutterSize: 5
 });
+console.log("hello, index");
 
 require("./editor.js");
+require("./timer.js");

@@ -6,6 +6,8 @@
 import swal from 'sweetalert';
 var langTools = ace.require('ace/ext/language_tools');
 
+console.log("hello, it's editor");
+
 
 function update() {
     var codeScreen = document.getElementById('editorIframe').contentWindow.document;
@@ -72,10 +74,19 @@ function setupEditor() {
 
 function validateLesson1(){
     let lesson1 = editor.getValue();    
+    console.log("hello, it's editor's function");
     console.log(lesson1);
     console.log(lesson1Solution);
     if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
-        swal("YOU SOLVED THE EXERCISE!");
+        swal({
+            position: 'top-end',
+            type: 'success',
+            title: 'You got it',
+            showConfirmButton: false,
+            
+          })    
+
+
     }
 }
 
@@ -111,6 +122,7 @@ function validateLesson1(){
   }) */
 
 
+ 
 
 setupEditor();
 update();
