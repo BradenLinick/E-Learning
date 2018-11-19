@@ -21,13 +21,7 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
-
-    {{-- @extends("pages.lessons")
-    @section('styles')
-    <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
-    @endsection --}}
-
-    
+    @yield('styles')
     
 </head>
 <body>

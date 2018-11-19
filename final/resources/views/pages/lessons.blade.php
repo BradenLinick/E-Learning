@@ -1,6 +1,13 @@
 @extends('layouts.app', ['active' => 'lessons'])
 
+
+@section('styles')
+  <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
+@endsection
+
+
 @section('content')
+
 
 <div data-lesson="1" id="lesson-container" class="d-flex">
   <div id="box-left" class="border border-default d-flex flex-column">
