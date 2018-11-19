@@ -1,4 +1,4 @@
-import 'swal' from 'sweetalert';
+import swal from 'sweetalert';
 //require('ace/ext/language_tools');
 //require('ace/multi_select');
 
@@ -18,7 +18,6 @@ function update() {
 }
 
 var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>";
-var lesson2Solution = 
 
 function trimSpaces(str) {
     return str.replace(/\s+/g, '');
