@@ -1,5 +1,7 @@
 @extends('layouts.app', ['active' => 'myclasses'])
 
+
+
 @section('content')
 
 <div class="container">
@@ -8,7 +10,7 @@
   <p class="text-white text-center">- Albert Einstein</p>
   <div class="border border-default d-flex align-items-center">
     <h3 class="p-4 text-white">HTML5</h3>
-    <p class="text-white p-4">Hypertext Markup Language or HTML is the building blocks of any webpage. It's main purpose is to put content on your page. The language doesn't require a high level of programming knowledge however it provides any developer with a fundamental piece to building nearly anything on the web. <a href="#">Dive in.</a></p>
+    <p class="text-white p-4">Hypertext Markup Language or HTML is the build ing blocks of any webpage. It's main purpose is to put content on your page. The language doesn't require a high level of programming knowledge however it provides any developer with a fundamental piece to building nearly anything on the web. <a href="#">Dive in.</a></p>
     <img class="m-2" src="/img/HTML.svg" alt="">
   </div>
   <div id="space-small"></div>

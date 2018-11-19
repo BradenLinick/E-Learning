@@ -1,7 +1,11 @@
 @extends('layouts.app', ['active' => 'lessons'])
 
-@section('content')
+@section('styles')
+<link href="{{ asset('css/editor.css') }}" rel="stylesheet">
+    <link href="{{asset('css/timer.css')}}" rel="stylesheet">
+@endsection
 
+@section('content')
 <div id="lesson-container" class="d-flex">
   <div id="box-left" class="border border-default d-flex flex-column">
     <div id="jumbo-mini">

@@ -6,6 +6,7 @@ stop = document.getElementById('timeStop'),
 refresh = document.getElementById('timeRefresh'),
 seconds = 0, minutes = 0, hours = 0,
 t;
+h1.classList.add('time');
 
 function add() {
 seconds++;
