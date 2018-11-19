@@ -5,8 +5,7 @@
     <link href="{{asset('css/timer.css')}}" rel="stylesheet">
 @endsection
 
-@section('content')
-<div id="lesson-container" class="d-flex">
+<div data-lesson="1" id="lesson-container" class="d-flex">
   <div id="box-left" class="border border-default d-flex flex-column">
     <div id="jumbo-mini">
       <h3 class="text-white text-left m-2">Lesson</h3>

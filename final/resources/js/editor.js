@@ -1,3 +1,4 @@
+import 'swal' from 'sweetalert';
 //require('ace/ext/language_tools');
 //require('ace/multi_select');
 
@@ -7,6 +8,7 @@ import swal from 'sweetalert';
 var langTools = ace.require('ace/ext/language_tools');
 
 console.log("hello, it's editor");
+
 
 
 function update() {
