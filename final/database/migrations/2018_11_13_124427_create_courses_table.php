@@ -19,6 +19,7 @@ class CreateCoursesTable extends Migration
             $table->string('course_name');
             $table->longText('description');
             $table->string('img');
+            $table->string('link')->nullable();
         });
     }
 
