@@ -28,7 +28,7 @@
     <div id="app">
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="{{ url('/') }}">Super Jedi Code Ninjas</a>
+            <a class="navbar-brand" href="{{ url('/') }}">Super Jedi C<img src="/img/sjcnlogo.png" alt="">de Ninjas</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
