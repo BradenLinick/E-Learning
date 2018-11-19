@@ -4,6 +4,8 @@ import swal from 'sweetalert';
 
 //var editor = ace.edit('propertiesText');
 //editor.getSession().setMode('ace/mode/properties');
+if (document.getElementById('lesson-container')) { //keep this wrapped on everything
+  
 var langTools = ace.require('ace/ext/language_tools');
 
 
@@ -114,3 +116,5 @@ function validateLesson1(){
 
 setupEditor();
 update();
+
+} //for container conditional at top of code. keep this wrapped on everything
