@@ -21,15 +21,11 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
-<<<<<<< HEAD
     
 
     @yield('styles')
 
     
-=======
-    @yield('styles')
->>>>>>> 9ab8d37cf6a643a704b7b62dce4b1141c510f380
     
 </head>
 <body>

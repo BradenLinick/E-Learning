@@ -1,4 +1,3 @@
-import swal from 'sweetalert';
 import Solution from './solution';
 import {startTimer} from './timer';
 
@@ -10,7 +9,7 @@ import {startTimer} from './timer';
 //editor.getSession().setMode('ace/mode/properties');
 if (document.getElementById('lesson-container')) { //keep this wrapped on everything
   
-var langTools = ace.require('ace/ext/language_tools');
+//var langTools = ace.require('ace/ext/language_tools');
 
 console.log("hello, it's editor");
 
@@ -28,6 +27,7 @@ function update() {
     codeScreen.close();
     
 }
+
 
 /*var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>"; 
 
@@ -50,6 +50,7 @@ function setupEditor() {
       </body>
     
     </html>`, 1);
+
 
     /*editor.getSession().on('change', function () {
         update();
@@ -84,8 +85,8 @@ function setupEditor() {
     })  
 
     console.log(editor);
-}
 
+}
 
 //  function validateLesson1(){
 //     let lesson1 = editor.getValue();    
@@ -104,6 +105,7 @@ function setupEditor() {
 console.log(window.editor);
  
 setupEditor();
+update();
 
 
 // let firstSolution = new Solution("<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>");
@@ -112,7 +114,7 @@ setupEditor();
 // firstSolution.checkUserSolution(lesson1);
 
 
-update();
+
 
 
 //lesson1 write a h1 headline with hello world
@@ -143,5 +145,4 @@ update();
       ]);
     }
   }) */
-
-
+}

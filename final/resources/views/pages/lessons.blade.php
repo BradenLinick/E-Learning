@@ -1,40 +1,32 @@
 @extends('layouts.app', ['active' => 'lessons'])
 
-<<<<<<< HEAD
 @section('styles')
 <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
     <link href="{{asset('css/timer.css')}}" rel="stylesheet">
 @endsection
 
 @section('content')
-=======
-
-@section('styles')
-  <link href="{{ asset('css/editor.css') }}" rel="stylesheet">
-@endsection
-
-
-@section('content')
-
-
->>>>>>> 9ab8d37cf6a643a704b7b62dce4b1141c510f380
 <div data-lesson="1" id="lesson-container" class="d-flex">
-  <div id="box-left" class="border border-default d-flex flex-column">
-    <div id="jumbo-mini">
-      <h3 class="text-white text-left m-2">Lesson</h3>
+
+
+    <div id="box-left" class="border border-default d-flex flex-column">
+      <div class="timeContainer">
+        <h1><time class="time">00:00:00</time></h1>
+        <button id="timeStart" class="timeButton">start</button>
+        <button id="timeStop" class="timeButton">stop</button>
+        <button id="timeRefresh" class="timeButton">refresh</button>
+      </div>
+      <div id="jumbo-mini">
+        <h3 class="text-white text-left m-2">Lesson</h3>
+      </div>
+      {{-- @foreach ($html[0] as $htmlLessons)
+      <p>{{ $htmlLessons->description }}</p>
+      @endforeach --}} 
+      {{--  number for array needs to be a counter variable. Logic must be written in a document other than this one  --}}
+      <p id="lesson-text" class="p-4 text-white">{{ $html->description }}</p>
+      
+      <div class="d-flex justify-content-center"><button id="prev-lesson" class="hidden">Prev</button><button id="next-lesson">Next</button></div>
     </div>
-    <div class="timeContainer">
-      <h1><time class="time">00:00:00</time></h1>
-      <button id="timeStart" class="timeButton">start</button>
-      <button id="timeStop" class="timeButton">stop</button>
-      <button id="timeRefresh" class="timeButton">refresh</button>
-    </div>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-    <p class="p-4 text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem tempora impedit obcaecati quis temporibus officia iusto inventore, mollitia nemo, sequi nobis ducimus! Veritatis quo incidunt eaque ducimus impedit molestiae temporibus est perferendis sint autem! Deleniti eum facere voluptatem, beatae quos omnis sunt veritatis? Officiis deserunt velit aspernatur delectus amet reiciendis?</p>
-  </div>
   <div id="box-mid" class="border border-default d-flex flex-column">
     <div id="jumbo-mini-mid">
 
