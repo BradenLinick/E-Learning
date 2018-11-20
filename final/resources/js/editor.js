@@ -1,5 +1,7 @@
 import swal from 'sweetalert';
 import Solution from './solution';
+import {startTimer} from './timer';
+
 
 //require('ace/ext/language_tools');
 //require('ace/multi_select');
@@ -11,10 +13,13 @@ var langTools = ace.require('ace/ext/language_tools');
 console.log("hello, it's editor");
 
 
+let firstSolution = new Solution("<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>");
 
 function update() {
+    startTimer();
+
     var codeScreen = document.getElementById('editorIframe').contentWindow.document;
-    let firstSolution = new Solution("<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>");
+
     firstSolution.checkUserSolution(editor.getValue());
     codeScreen.open();
     codeScreen.write(editor.getValue());

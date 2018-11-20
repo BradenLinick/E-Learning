@@ -1,9 +1,11 @@
 import swal from 'sweetalert';
 import {stopTimer} from './timer';
+import {startTimer} from './timer';
 
 export default class Solution {
     constructor(exerciseSolution) {
         this.exerciseSolution = exerciseSolution;
+        startTimer();
         stopTimer();
     }
 

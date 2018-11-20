@@ -26,7 +26,7 @@ h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (min
 
 let interval = null;
 
-function startTimer(){
+export function startTimer(){
     if(interval === null){
         interval = setInterval(add, 1000);
     }
