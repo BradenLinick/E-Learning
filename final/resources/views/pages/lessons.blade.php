@@ -9,15 +9,17 @@
 <div data-lesson="1" id="lesson-container" class="d-flex">
 
 
-    <div id="box-left" class="border border-default d-flex flex-column">
-      <div class="timeContainer">
-        <h1><time class="time">00:00:00</time></h1>
-        <button id="timeStart" class="timeButton">start</button>
-        <button id="timeStop" class="timeButton">stop</button>
-        <button id="timeRefresh" class="timeButton">refresh</button>
-      </div>
-      <div id="jumbo-mini">
-        <h3 class="text-white text-left m-2">Lesson</h3>
+
+  <div id="box-left" class="border border-default d-flex flex-column">
+    <h3 class="text-white text-left m-2">Lesson</h3>
+
+    <div class="timeContainer">
+      <h1><time class="time">00:00:00</time></h1>
+      <button id="timeStart" class="timeButton">start</button>
+      <button id="timeStop" class="timeButton">stop</button>
+      <button id="timeRefresh" class="timeButton">refresh</button>
+    </div>
+    <div id="jumbo-mini">
       </div>
       {{-- @foreach ($html[0] as $htmlLessons)
       <p>{{ $htmlLessons->description }}</p>
