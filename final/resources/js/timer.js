@@ -23,21 +23,31 @@ h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (min
 
 
 }
-function timer() {
-clearInterval(window.t);    
-console.log('interval cleared');
-window.t = setInterval(add, 1000);
-}
-timer();
 
+let interval = null;
+
+function startTimer(){
+    if(interval === null){
+        interval = setInterval(add, 1000);
+    }
+}
+startTimer();
+
+
+export function stopTimer(){
+    clearInterval(interval);
+    interval = null;
+}
 
 //start.onclick = timer;
 start.addEventListener('click', function(){
-    timer();
+    startTimer();
+    console.log("new start");
 });
 stop.addEventListener('click', function() {
-    clearInterval(window.t);
+    stopTimer();
 });
+
 refresh.addEventListener('click', function() {
     h1.textContent = "00:00:00";
     seconds = 0; minutes = 0; hours = 0; 

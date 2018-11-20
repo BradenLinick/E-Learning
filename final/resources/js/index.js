@@ -1,11 +1,8 @@
 import Split from 'split.js';
 import {url} from './env.js';
 
-<<<<<<< HEAD
 if(document.querySelector('#box-left')){
-=======
 if (document.getElementById('lesson-container')) {
->>>>>>> master
   Split(['#box-left', '#box-mid', '#box-right'], {
     sizes: [33.3, 33.4, 33.3],
     minSize: 200,

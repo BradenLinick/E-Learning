@@ -7,7 +7,7 @@
   <div id="about">
     <h3 class="text-white">Riccardo Dal Pio Luogo</h3>
     <div class="d-flex justify-content-around align-items-center">
-      <img class="border-none rounded rounded-circle" style="width: 10rem; height: 12rem" src="/img/ricky.jpg" alt="">
+      <img class="border-none rounded rounded-circle" style="width: 10rem; height: 12rem" src="{{ asset('img/ricky.jpg')}}" alt="">
       <p style="width: 40rem" class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, distinctio corporis porro qui deleniti dignissimos sunt autem sed sequi explicabo delectus voluptatibus inventore. Ipsam tenetur officia, maxime nobis fugiat corrupti. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem, distinctio corporis porro qui deleniti dignissimos sunt autem sed sequi explicabo delectus voluptatibus inventore. Ipsam tenetur officia, maxime nobis fugiat corrupti.</p>
     </div>
   </div>

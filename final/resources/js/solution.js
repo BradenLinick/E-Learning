@@ -1,11 +1,15 @@
 import swal from 'sweetalert';
+import {stopTimer} from './timer';
 
-class Solution {
+export default class Solution {
     constructor(exerciseSolution) {
         this.exerciseSolution = exerciseSolution;
+        stopTimer();
     }
 
     checkUserSolution(userSolution){
+        console.log(this.trimSpaces(this.exerciseSolution.toLowerCase()));
+        console.log(this.trimSpaces(userSolution.toLowerCase()));
         if(this.trimSpaces(this.exerciseSolution.toLowerCase()) === this.trimSpaces(userSolution.toLowerCase())) {
             swal({
                 position: 'top-end',
@@ -13,6 +17,7 @@ class Solution {
                 title: 'You solved the exercise',
                 button: 'next'            
               });
+              stopTimer();
         }
     }
 

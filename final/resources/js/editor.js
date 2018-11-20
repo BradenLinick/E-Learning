@@ -1,10 +1,11 @@
-import 'swal' from 'sweetalert';
+import swal from 'sweetalert';
+import Solution from './solution';
+
 //require('ace/ext/language_tools');
 //require('ace/multi_select');
 
 //var editor = ace.edit('propertiesText');
 //editor.getSession().setMode('ace/mode/properties');
-import swal from 'sweetalert';
 var langTools = ace.require('ace/ext/language_tools');
 
 console.log("hello, it's editor");
@@ -13,21 +14,23 @@ console.log("hello, it's editor");
 
 function update() {
     var codeScreen = document.getElementById('editorIframe').contentWindow.document;
-
+    let firstSolution = new Solution("<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>");
+    firstSolution.checkUserSolution(editor.getValue());
     codeScreen.open();
     codeScreen.write(editor.getValue());
     codeScreen.close();
     
 }
 
-var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>";
+/*var lesson1Solution = "<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>"; 
 
 
 function trimSpaces(str) {
     return str.replace(/\s+/g, '');
-}
+} */
 
 function setupEditor() {
+    
     window.editor = ace.edit("editor");
     editor.setTheme("ace/theme/terminal");
     editor.getSession().setMode("ace/mode/html");
@@ -70,25 +73,39 @@ function setupEditor() {
     
     editor.on('change', function(e){        
         update();
-        validateLesson1();    })  
+        //validateLesson1();   
+    })  
+
+    console.log(editor);
 }
 
 
-function validateLesson1(){
-    let lesson1 = editor.getValue();    
-    console.log("hello, it's editor's function");
-    console.log(lesson1);
-    console.log(lesson1Solution);
-    if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
-        swal({
-            position: 'top-end',
-            icon: 'success',
-            title: 'You solved the exercise',
-            button: 'next'            
-          });
-    }
-}
+//  function validateLesson1(){
+//     let lesson1 = editor.getValue();    
+//     console.log("hello, it's editor's function");
+//     console.log(lesson1);
+//     console.log(lesson1Solution);
+//     if(trimSpaces(lesson1.toLowerCase()) == trimSpaces(lesson1Solution.toLocaleLowerCase())) {
+//         swal({
+//             position: 'top-end',
+//             icon: 'success',
+//             title: 'You solved the exercise',
+//             button: 'next'            
+//           });
+//     }
+// } 
+console.log(window.editor);
+ 
+setupEditor();
 
+
+// let firstSolution = new Solution("<!DOCTYPE html><html><head></head><body><h1>Hello world</h1></body></html>");
+// let lesson1 = editor.getValue();
+// console.log(lesson1);
+// firstSolution.checkUserSolution(lesson1);
+
+
+update();
 
 
 //lesson1 write a h1 headline with hello world
@@ -121,7 +138,3 @@ function validateLesson1(){
   }) */
 
 
- 
-
-setupEditor();
-update();
