@@ -5,7 +5,7 @@ import {startTimer} from './timer';
 export default class Solution {
     constructor(exerciseSolution) {
         this.exerciseSolution = exerciseSolution;
-        startTimer();
+        
         stopTimer();
     }
 

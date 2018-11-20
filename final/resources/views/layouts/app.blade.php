@@ -16,22 +16,27 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" href="/img/SJCNlogo.png">
 
     <!-- Styles -->
 
     <link href="{{ asset('css/app.min.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     
 
     @yield('styles')
 
     
+=======
+    @yield('styles')
+>>>>>>> 9ab8d37cf6a643a704b7b62dce4b1141c510f380
     
 </head>
 <body>
     <div id="app">
 
         <nav id="nav" class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="{{ url('/') }}">Super Jedi Code Ninjas</a>
+            <a class="navbar-brand" href="{{ url('/') }}">Super Jedi C<img src="/img/sjcnlogo.png" alt="logo">de Ninjas</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>

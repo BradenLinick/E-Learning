@@ -16,20 +16,23 @@ class DatabaseSeeder extends Seeder
         // $this->call(UsersTableSeeder::class);
         $html = Courses::create([
           'course_name' => 'HTML',
-          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
-          'img' => '/img/html.svg'
+          'description' => 'Hypertext Markup Language or HTML is the building blocks of any webpage. It\'s main purpose is to put content on your page. The language doesn\'t require a high level of programming knowledge however it provides any developer with a fundamental piece to building nearly anything on the web. Dive in.',
+          'img' => '/img/html.svg',
+          'link' => "action('IntroController@htmlIntro')"
         ]);
 
         $css = Courses::create([
           'course_name' => 'CSS',
           'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
-          'img' => '/img/css3.svg'
+          'img' => '/img/css3.svg',
+          'link' => "cssIntro"
         ]);
 
         $js = Courses::create([
           'course_name' => 'JavaScript',
           'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
-          'img' => '/img/js.png'
+          'img' => '/img/js.png',
+          'link' => "jsIntro"
         ]);
 
         for ($i = 0; $i < 5; $i++) {

@@ -6,7 +6,7 @@
         <h2 class="text-white display-4">Insert generic mission statement here</h2>
       
         
-        <div class="my-3 container d-flex flex-column flex-md-row justify-content-between">
+        <div class="my-3 d-flex flex-column flex-md-row justify-content-between">
           @foreach ($courses as $course)
           <div id="box" class="d-flex flex-column justify-content-center align-items-center">
             <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@htmlIntro') }}">{{ $course->course_name }}</a></h3><img id="classLogo" src="{{ asset($course->img) }}" alt=""></div>
