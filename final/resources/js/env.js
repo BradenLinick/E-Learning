@@ -1,1 +1,1 @@
-export const url = 'http://asdfg';
+export const url = 'http://localserver.test/E-Learning/final/public';
