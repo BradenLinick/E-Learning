@@ -1,11 +1,13 @@
 console.log("hello, it's timer");
 let countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+if(document.querySelector('#box-left')) {
 var h1 = document.getElementsByTagName('h1')[0],
 start = document.getElementById('timeStart'),
 stop = document.getElementById('timeStop'),
 refresh = document.getElementById('timeRefresh'),
 seconds = 0, minutes = 0, hours = 0,
 t;
+}
 h1.classList.add('time');
 
 function add() {
