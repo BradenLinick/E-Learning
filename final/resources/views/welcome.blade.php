@@ -3,7 +3,7 @@
 @section('content')
     <div id="bg">
       <div class="container d-flex flex-column align-content-center">
-        <h2 class="text-white display-4">Insert generic mission statement here</h2>
+        <h2 class="text-white display-4">E-learning platform</h2>
       
         
         <div class="my-3 d-flex flex-column flex-md-row justify-content-between">

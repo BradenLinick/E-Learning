@@ -89,7 +89,7 @@ export default class Lesson {
         this.lesson_id = parseInt(lesson_id);
 
         if(!this.hasMoreLessons){
-            alert('no more lessons');
+            swal('you completed the course');
       
       
             //window location redirects
