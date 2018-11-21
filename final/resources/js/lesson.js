@@ -1,5 +1,5 @@
 import Solution from './solution.js';
-import {startTimer} from './timer.js';
+import {startTimer, resetTimer} from './timer.js';
 
 export default class Lesson {
     constructor() {
@@ -133,6 +133,16 @@ export default class Lesson {
 
             self.solution = new Solution(json.lesson.solution);
             console.log(json.lesson.solution);
+
+            if(json.lesson.structure){
+                self.editor.setValue(json.lesson.structure, 1);
+
+            } else {
+                self.editor.setValue(`// default code`, 1);
+            }
+
+            resetTimer();
+            startTimer();
         });
       }
     

@@ -39,6 +39,11 @@ export function stopTimer(){
     interval = null;
 }
 
+export function resetTimer() {
+    h1.textContent = "00:00:00";
+    seconds = 0; minutes = 0; hours = 0; 
+}
+
 //start.onclick = timer;
 start.addEventListener('click', function(){
     startTimer();
@@ -49,8 +54,7 @@ stop.addEventListener('click', function() {
 });
 
 refresh.addEventListener('click', function() {
-    h1.textContent = "00:00:00";
-    seconds = 0; minutes = 0; hours = 0; 
+    resetTimer();    
     console.log('hello, new refresh');   
 } )
 
