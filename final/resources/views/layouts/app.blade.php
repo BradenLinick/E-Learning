@@ -41,9 +41,9 @@
                 <li class="nav-item {{ $active == '/' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ url('/') }}">Home</a>
                 </li>
-                <li class="nav-item{{ $active == 'myclasses' ? ' active' : '' }}">
+                {{-- <li class="nav-item{{ $active == 'myclasses' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ action('myclasses@index') }}">My Classes</a>
-                </li>
+                </li> --}}
                 <li class="nav-item{{ $active == 'about' ? ' active' : '' }}">
                   <a class="nav-link" href="{{ action('AboutController@index') }}">About</a>
                 </li>
