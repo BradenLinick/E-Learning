@@ -1,5 +1,6 @@
 import Solution from './solution.js';
 import {startTimer, resetTimer} from './timer.js';
+import swal from 'sweetalert';
 
 export default class Lesson {
     constructor() {
@@ -89,7 +90,12 @@ export default class Lesson {
         this.lesson_id = parseInt(lesson_id);
 
         if(!this.hasMoreLessons){
-            swal('you completed the course');
+            swal({
+                position: 'top-end',
+                icon: 'success',
+                title: 'You completed the course',
+                button: 'next'            
+              });
       
       
             //window location redirects
