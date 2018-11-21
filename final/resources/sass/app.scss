@@ -239,9 +239,38 @@ body {
   background-color: black;
 }
 
-#about h3 {
-  font-size: 38px;
-  font-weight: lighter;
+/* About */
+
+#profile-ric {
+  width: 10rem; 
+  height: 12rem;
+  border-radius: 2rem;
+}
+
+#profile-bra {
+  width: 10rem; 
+  height: 14rem;
+  border-radius: 2rem;
+}
+
+#profile-text {
+  width: 80%; 
+  background-color: rgba(0,0,0,0.7);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+#about {
+  margin-bottom: 1rem;
+}
+
+#div {
+  border: .4px solid white;
+}
+
+#name {
+  font-size: 32px;
+  width: 80%;
 }
 
 /* Intro Pages */
