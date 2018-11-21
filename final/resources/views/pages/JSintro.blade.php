@@ -15,11 +15,11 @@
       </div>
       <div>
         <ul id="lessons">
-          <li class="text-white">L1: What are elements?</li>
-          <li class="text-white">L2: Body and more on elements</li>
-          <li class="text-white">L3: The head and what the user doesn't see</li>
-          <li class="text-white">L4: Important non-essential elements</li>
-          <li class="text-white">L5: Recap</li>
+          <a href="{{ action('LessonsController@index') }}"><li class="text-white">L1: What are elements?</li></a>
+          <a href="{{ action('LessonsController@index') }}"><li class="text-white">L2: Body and more on elements</li></a>
+          <a href="{{ action('LessonsController@index') }}"><li class="text-white">L3: The head and what the user doesn't see</li></a>
+          <a href="{{ action('LessonsController@index') }}"><li class="text-white">L4: Important non-essential elements</li></a>
+          <a href="{{ action('LessonsController@index') }}"><li class="text-white">L5: Recap</li></a>
         </ul>
     </div>
     </div>

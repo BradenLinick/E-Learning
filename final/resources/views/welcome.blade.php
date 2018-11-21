@@ -3,7 +3,7 @@
 @section('content')
     <div id="bg">
       <div class="container d-flex flex-column align-content-center">
-        <h2 class="text-white display-4">Our mission is to make education more accessible. Start your coding journey today.</h2>
+        <h1 class="text-white display-md-4">Our mission is to make education more accessible. Start your coding journey today.</h1>
       
         
         <div class="my-3 d-flex flex-column flex-md-row justify-content-between">
