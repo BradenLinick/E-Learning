@@ -93,8 +93,8 @@ export default class Lesson {
             swal({
                 position: 'top-end',
                 icon: 'success',
-                title: 'You completed the course',
-                button: 'next'            
+                title: 'You completed the course!',
+                button: 'Congratulations!'            
               });
       
       
