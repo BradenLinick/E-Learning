@@ -68,8 +68,88 @@ body {
   min-height: 100vh;
 }
 
+#home-bottom-container {
+  margin-top: 5rem;
+}
 
+#slideshow {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
 
+#slideshow > * {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: slide 12s infinite;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+#slide:nth-child(1) {
+  left: 0%;
+  animation-delay: -1s;
+  background-image: url('/img/goals.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: contain;
+}
+
+#slide:nth-child(2) {
+  animation-delay: 2s;
+  background-image: url('/img/horizon.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: contain;
+}
+
+#slide:nth-child(3) {
+  animation-delay: 5s;
+  background-image: url('/img/worktogether.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: contain;
+}
+
+#slide:nth-child(4) {
+  left: 0%;
+  animation-delay: 8s;
+  background-image: url('/img/window.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-attachment: contain;
+}
+
+#slide p {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+}
+
+@keyframes slide {
+  0%{
+    left:100%;
+    visibility:visible;
+  }25%{
+    left:0%;
+    visibility:visible;
+  }50%{
+    left:-100%;
+    visibility:visible;
+  }50.01%{
+    visibility:hidden;
+  }100%{
+    left:100%;
+    visibility:hidden;
+  }
+}
 
 /* Lessons */
 
@@ -85,6 +165,7 @@ body {
 #lesson-text {
   font-size: 16px;
 }
+
 #box-left {
   width: 100%;
   overflow: scroll;
@@ -133,28 +214,13 @@ body {
   cursor: ew-resize;
 }
 
-#home-bottom-container {
-  margin-top: 5rem;
-  // height: 100vh;
-  // width: 100vw;
-}
-
-#slideshow {
-  border: 1px solid white;
-  height: 20rem;
-  background-image: url('/img/window.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center top;
-}
-
 #quote {
   color: #2A7EBA;
 }
 
 #classLogo {
   width:5rem; height: 5rem;
-  padding: .5rem .5rem;
+  padding: .5rem 1rem;
 }
 
 #box {
@@ -239,6 +305,24 @@ body {
   }
 }
 
+@media only screen and (max-width: 824px) and (min-width: 768px) {
+  #bg {
+    height: 115vh;
+  }
+}
+
+@media only screen and (max-width: 646px) and (min-width: 601px) {
+  #bg {
+    height: 160vh;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 647px) {
+  #bg {
+    height: 150vh;
+  }
+}
+
 @media only screen and (max-width: 991px) and (min-width: 601px) {
   .display-4 {
     font-size: 3rem;
@@ -256,13 +340,3 @@ body {
     padding: 1rem;
   }
 }
-
-// .links > a {
-//   color: #636b6f;
-//   padding: 0 25px;
-//   font-size: 12px;
-//   font-weight: 600;
-//   letter-spacing: .1rem;
-//   text-decoration: none;
-//   text-transform: uppercase;
-// }

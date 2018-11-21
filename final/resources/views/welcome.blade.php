@@ -9,7 +9,7 @@
         <div class="my-3 d-flex flex-column flex-md-row justify-content-between">
           @foreach ($courses as $course)
           <div id="box" class="d-flex flex-column justify-content-center align-items-center">
-            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action($course->link) }}">{{ $course->course_name }}</a></h3><img id="classLogo" src="{{ asset($course->img) }}" alt=""></div>
+            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white ml-md-4"><a href="{{ action($course->link) }}">{{ $course->course_name }}</a></h3><img id="classLogo" src="{{ asset($course->img) }}" alt=""></div>
             <div class="p-3">
               <p class="text-white">{{ $course->description }}</p>
             </div>
@@ -40,5 +40,10 @@
           </div>
       </div>
     </div>
-  <div id="slideshow"></div>
+  <div id="slideshow">
+    <div id="slide"><p>Collaborate as a team</p></div>
+    <div id="slide"><p>Grow from you dream destination</p></div>
+    <div id="slide"><p>Push your limits</p></div>
+    <div id="slide"><p>Find your dream job</p></div>
+  </div>
 @endsection
