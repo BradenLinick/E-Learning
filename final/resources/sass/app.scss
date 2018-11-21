@@ -125,7 +125,7 @@ body {
   background-color: white;
 }
 
-/* */
+/* MAIN */
 
 #handle {
   width: 10px;
@@ -133,23 +133,30 @@ body {
   cursor: ew-resize;
 }
 
+#home-bottom-container {
+  margin-top: 5rem;
+  // height: 100vh;
+  // width: 100vw;
+}
+
+#slideshow {
+  border: 1px solid white;
+  height: 20rem;
+}
+
 #quote {
   color: #2A7EBA;
 }
 
-#chooseUs {
-  height: 100vh;
-  width: 100vw;
-}
-
 #classLogo {
   width:5rem; height: 5rem;
+  padding: .5rem .5rem;
 }
 
 #box {
-  background-color: rgba(0,0,0,0.7); 
-  width: 20rem; height: 20rem; 
+  background-color: rgba(0,0,0,0.7);  
   border: 1px solid white;
+  margin: .5rem;
 }
 
 #box:hover {
@@ -200,7 +207,49 @@ body {
 
 @media only screen and (max-width: 600px) {
   #bg {
-      height: auto;
+    height: auto;
+  }
+  
+  .display-1 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.0;
+  }
+    
+  .display-2 {
+      font-size: 2.75rem;
+      font-weight: 300;
+      line-height: 1.0;
+  }
+    
+  .display-3 {
+      font-size: 2.25rem;
+      font-weight: 300;
+      line-height: 1.0;
+  }
+    
+  .display-4 {
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.25;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 601px) {
+  .display-4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.25;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #box {
+    width: 20rem; height: 20rem;
+  }
+
+  #bg {
+    padding: 1rem;
   }
 }
 

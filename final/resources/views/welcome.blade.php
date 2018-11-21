@@ -3,7 +3,7 @@
 @section('content')
     <div id="bg">
       <div class="container d-flex flex-column align-content-center">
-        <h1 class="text-white display-md-4">Our mission is to make education more accessible. Start your coding journey today.</h1>
+        <h1 class="text-white display-4">Our mission is to make education more accessible. Start your coding journey today.</h1>
       
         
         <div class="my-3 d-flex flex-column flex-md-row justify-content-between">
@@ -16,31 +16,14 @@
           </div>
           @endforeach
 
-          {{-- <div id="box" class="d-flex flex-column justify-content-center align-items-center">
-            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@cssIntro') }}">CSS3</a></h3><img id="classLogo" src="/img/css3.svg" alt=""></div>
-            <div class="p-3">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ut molestias voluptatum eos accusantium nam consequatur cupiditate vero, sequi eius enim porro eum aliquam, velit iste ipsa unde veritatis! Impedit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-
-          <div id="box" class="d-flex flex-column justify-content-center align-items-center">
-            <div id="box-width" class="d-flex justify-content-around align-items-center"><h3 class="text-white"><a href="{{ action('IntroController@jsIntro') }}">JavaScript</a></h3><img id="classLogo" src="/img/js.png" alt=""></div>
-            <div class="p-3">
-              <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ut molestias voluptatum eos accusantium nam consequatur cupiditate vero, sequi eius enim porro eum aliquam, velit iste ipsa unde veritatis! Impedit Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div> --}}
-
         </div>
       </div>
-
-
-      </div>
     </div>
+  </div>
 
-      
-        <div id="space"></div>
-        <h2 class="text-white text-center mx-2 display-4">Why Choose Us? </h2>
+    <div id="home-bottom-container" class="container">
+      <h2 class="text-white text-center mx-2 display-4">Why Choose Us? </h2>
         <div id="chooseUs" class="container d-flex flex-column flex-md-row">
-          <div id="space-small"></div>
           <div class="m-4 d-flex flex-column flex-md-row justify-content-between">
             <div class="d-flex flex-column align-items-center">
               <i id="yellow-text"  class="fa-7x fas fa-graduation-cap"></i>
@@ -56,4 +39,6 @@
             </div>
           </div>
       </div>
+    </div>
+  <div id="slideshow"></div>
 @endsection
