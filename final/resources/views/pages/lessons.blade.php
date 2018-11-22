@@ -11,35 +11,26 @@
 
 
   <div id="box-left" class="border border-default d-flex flex-column">
-    <h3 class="text-white text-left m-2">Lesson</h3>
-
-    <div class="timeContainer">
-      <h1><time class="time">00:00:00</time></h1>
-      <button id="timeStart" class="timeButton">start</button>
-      <button id="timeStop" class="timeButton">stop</button>
-      <button id="timeRefresh" class="timeButton">refresh</button>
+    <div id="jumbo-mini" class="d-flex justify-content-between">
+      <h3 class="text-white text-left m-2 d-inline">Lesson</h3>
+      {{-- <h1><time class="time">00:00:00</time></h1> --}}
+      <h1 class="d-inline pt-2 pr-2"></h1>
     </div>
-    <div id="jumbo-mini">
+      <div class="timeContainer d-flex justify-content-end py-3">
+        <button id="timeStart" class="timeButton start-color">start</button>
+        <button id="timeStop" class="timeButton stop-color">stop</button>
+        <button id="timeRefresh" class="timeButton refresh-color">refresh</button>
       </div>
-      {{-- @foreach ($html[0] as $htmlLessons)
-      <p>{{ $htmlLessons->description }}</p>
-      @endforeach --}} 
-      {{--  number for array needs to be a counter variable. Logic must be written in a document other than this one  --}}
-      <p id="lesson-text" class="p-4 text-white">{{ $html->description }}</p>
-      
-      <div class="d-flex justify-content-center"><button id="prev-lesson" class="hidden">Prev</button><button id="next-lesson">Next</button></div>
+        <p id="lesson-text" class="p-4 text-white">{{ $html->description }}</p>
+      <div class="d-flex justify-content-center"><button id="prev-lesson" class="hidden">Prev</button><button id="next-lesson">Next Lesson</button></div>
     </div>
-  <div id="box-mid" class="border border-default d-flex flex-column">
-    <div id="jumbo-mini-mid">
 
-      <h3 class="text-dark text-left m-2">Code</h3>
-    </div>
+  <div id="box-mid" class="border border-default d-flex flex-column">
     <div id="editor"></div>
   </div>
+
   <div id="box-right" class="border border-default d-flex flex-column">
-    <div id="jumbo-mini-right">
-      <h3 class="text-white text-left m-2">Result</h3>
-    </div>
+    
     <iframe id="editorIframe"></iframe>
 
   </div>

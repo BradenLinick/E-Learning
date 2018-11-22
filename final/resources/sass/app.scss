@@ -206,6 +206,29 @@ body {
   background-color: white;
 }
 
+.start-color {
+  background-color: $primary-color;
+}
+
+.stop-color {
+  background-color: $red;
+}
+
+.refresh-color {
+  background-color: $green;
+}
+
+.timeContainer {
+  border-bottom: 1px solid white;
+}
+
+#next-lesson {
+  border: none;
+    font-weight: 700;
+    padding: .5;
+    border-radius: 2rem;
+}
+
 /* MAIN */
 
 #handle {
