@@ -16,8 +16,8 @@ export default class Solution {
             swal({
                 position: 'top-end',
                 icon: 'success',
-                title: 'You completed the course',
-                button: 'Congratulations!'            
+                title: 'You solved the exercise!',
+                button: 'Next!'            
               });
               stopTimer();
         }
