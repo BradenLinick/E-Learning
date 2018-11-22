@@ -253,15 +253,10 @@ body {
   color: #2A7EBA;
 }
 
-#classLogo {
-  width:5rem; height: 5rem;
-  padding: .5rem 1rem;
-}
-
 #box {
   background-color: rgba(0,0,0,0.7);  
   border: 1px solid white;
-  margin: .5rem;
+  margin: .3rem;
 }
 
 #box:hover {
@@ -383,7 +378,7 @@ body {
 
 @media only screen and (max-width: 767px) and (min-width: 647px) {
   #bg {
-    height: 150vh;
+    height: 160vh;
   }
 }
 
