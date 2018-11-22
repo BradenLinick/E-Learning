@@ -104,6 +104,9 @@
     </div>
       <footer class="d-flex align-items-center justify-content-center" id="footers">
           <span class="text-white">Italian-American Productions, LLC.</span>
+          <a href="#"><i class="fab fa-instagram text-white ml-3 fa-lg"></i></a>
+          <a href="#"><i class="fab fa-twitter text-white ml-3 fa-lg"></i></a>
+          <a href="#"><i class="fab fa-google text-white ml-3 fa-lg"></i></a>
       </footer>
       {{-- <script src="{{ url('https://unpkg.com/split.js/split.min.js') }}"></script> --}}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.1/ace.js"></script>
