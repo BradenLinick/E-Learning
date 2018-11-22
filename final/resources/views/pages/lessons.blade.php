@@ -10,7 +10,7 @@
 
 
 
-  <div id="box-left" class="border border-default d-flex flex-column">
+  <div id="box-left" class="border border-default d-flex flex-column align-items-center">
     <div id="jumbo-mini" class="d-flex justify-content-between">
       <h3 class="text-white text-left m-2 d-inline">Lesson</h3>
       {{-- <h1><time class="time">00:00:00</time></h1> --}}
