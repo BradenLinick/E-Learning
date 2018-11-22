@@ -160,7 +160,7 @@ eval("/* WEBPACK VAR INJECTION */(function(setImmediate, clearImmediate) {!funct
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"url\", function() { return url; });\nconst url = 'http://localserver.test/E-Learning/final/public';//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvZW52LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2pzL2Vudi5qcz9iY2EwIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCB1cmwgPSAnaHR0cDovL2xvY2Fsc2VydmVyLnRlc3QvRS1MZWFybmluZy9maW5hbC9wdWJsaWMnOyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUFBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/env.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"url\", function() { return url; });\nconst url = 'http://elearning.data4you.cz/';\r\n//CHANGE THE URL if you're working on the website locally//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvZW52LmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2pzL2Vudi5qcz9iY2EwIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBjb25zdCB1cmwgPSAnaHR0cDovL2VsZWFybmluZy5kYXRhNHlvdS5jei8nO1xyXG4vL0NIQU5HRSBUSEUgVVJMIGlmIHlvdSdyZSB3b3JraW5nIG9uIHRoZSB3ZWJzaXRlIGxvY2FsbHkiXSwibWFwcGluZ3MiOiJBQUFBO0FBQUE7QUFBQTtBQUNBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/env.js\n");
 
 /***/ }),
 
