@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
 
         $css = Courses::create([
           'course_name' => 'CSS',
-          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
+          'description' => 'CSS is the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is referred to as the separation of structure (or: content) from presentation. - From w3.org',
           'img' => 'css3-alt',
           'link' => 'IntroController@cssIntro',
           'color' => '#2A7EBA'
@@ -32,7 +32,7 @@ class DatabaseSeeder extends Seeder
 
         $js = Courses::create([
           'course_name' => 'JavaScript',
-          'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo mollitia perferendis libero nam rerum officia cupiditate ut vel consequatur, illum quod doloribus eius pariatur suscipit, fuga odit velit aspernatur quas autem culpa ea? Qui quas officia, iusto architecto praesentium laborum.',
+          'description' => 'JavaScript is a scripting or programming language that allows you to implement complex things on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.',
           'img' => 'js-square',
           'link' => 'IntroController@jsIntro',
           'color' => '#C7C623'
