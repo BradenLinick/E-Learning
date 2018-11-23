@@ -178,6 +178,7 @@ body {
 #box-mid {
   width: 100%;
   overflow: scroll;
+  flex-grow: 1;
 }
 
 #box-right {
