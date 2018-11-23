@@ -9,6 +9,20 @@ if(document.querySelector('#box-left')) {
     t;
    
     h1.classList.add('time');
+
+    //start.onclick = timer;
+start.addEventListener('click', function(){
+    startTimer();
+    console.log("new start");
+});
+stop.addEventListener('click', function() {
+    stopTimer();
+});
+
+refresh.addEventListener('click', function() {
+    resetTimer();    
+    console.log('hello, new refresh');   
+} )
     
 }
 
@@ -48,19 +62,7 @@ export function resetTimer() {
     seconds = 0; minutes = 0; hours = 0; 
 }
 
-//start.onclick = timer;
-start.addEventListener('click', function(){
-    startTimer();
-    console.log("new start");
-});
-stop.addEventListener('click', function() {
-    stopTimer();
-});
 
-refresh.addEventListener('click', function() {
-    resetTimer();    
-    console.log('hello, new refresh');   
-} )
 
 /*stop.onclick = function() {
 clearInterval(window.t);
