@@ -132,7 +132,7 @@ export default class Lesson {
         })
         .then(function(json){
             console.log(json);
-            document.getElementById('lesson-text').innerHTML = self.escapeHtml(json.lesson.description);
+            document.getElementById('lesson-text').innerHTML = json.lesson.description;
             if(json.last){
               self.hasMoreLessons = false;
             }
