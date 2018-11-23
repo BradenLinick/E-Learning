@@ -22,18 +22,18 @@
         <button id="timeRefresh" class="timeButton refresh-color">refresh</button>
       </div>
         <p id="lesson-text" class="p-4 text-white">{{ $html->description }}</p>
-      <div class="d-flex justify-content-center"><button id="prev-lesson" class="hidden">Prev</button><button id="next-lesson">Next Lesson</button></div>
+      <div class="d-flex justify-content-center flex-shrink-0"><button id="prev-lesson" class="hidden">Prev</button><button id="next-lesson">Next Lesson</button></div>
     </div>
 
-  <div id="box-mid" class="border border-default d-flex flex-column">
-    <div id="editor"></div>
-  </div>
+    <div id="box-mid" class="border border-default d-flex flex-column">
+      <div id="editor"></div>
+    </div>
 
-  <div id="box-right" class="border border-default d-flex flex-column">
-    
-    <iframe id="editorIframe"></iframe>
+    <div id="box-right" class="border border-default d-flex flex-column">
+      
+      <iframe id="editorIframe"></iframe>
 
-  </div>
+    </div>
 </div>
 
 
