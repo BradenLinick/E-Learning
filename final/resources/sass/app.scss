@@ -377,11 +377,24 @@ body {
   #bg {
     height: 160vh;
   }
+  #intro-text {
+    padding: 3rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #intro-text {
+    padding: 3rem 2rem;
+  }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 647px) {
   #bg {
     height: 160vh;
+  }
+
+  #intro-text {
+    padding: 3rem 2rem;
   }
 }
 
