@@ -164,6 +164,7 @@ body {
 #lesson-container {
   width: 100vw;
   height: 86vh;
+  flex-shrink: 0;
 }
 
 #lesson-text {
@@ -199,6 +200,7 @@ body {
 #jumbo-mini {
   width: 100%;
   background-color: $primary-color;
+  flex-shrink: 0;
 }
 
 #jumbo-mini-mid {
