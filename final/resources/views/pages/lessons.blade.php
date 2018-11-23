@@ -11,12 +11,12 @@
 
 
   <div id="box-left" class="border border-default d-flex flex-column align-items-center">
-    <div id="jumbo-mini" class="d-flex justify-content-between align-items-center">
+    <div id="jumbo-mini" class="d-flex justify-content-between align-items-center flex-shrink-0">
       <h3 class="text-white text-left mt-2 ml-2 d-inline">Lesson</h3>
       {{-- <h1><time class="time">00:00:00</time></h1> --}}
       <h1 class="d-inline pt-2 pr-2"></h1>
     </div>
-      <div class="timeContainer d-flex justify-content-end py-3">
+      <div class="timeContainer d-flex justify-content-end py-3 flex-shrink-0">
         <button id="timeStart" class="timeButton start-color">start</button>
         <button id="timeStop" class="timeButton stop-color">stop</button>
         <button id="timeRefresh" class="timeButton refresh-color">refresh</button>
